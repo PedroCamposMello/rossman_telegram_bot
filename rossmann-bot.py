@@ -35,8 +35,8 @@ def send_message( chat_id, text ):
 
 def load_dataset( store_id ):
     # loading test dataset
-    df10 = pd.read_csv( 'test.csv' )
-    df_store_raw = pd.read_csv( 'store.csv' )
+    df10 = pd.read_csv( 'data/test.csv' )
+    df_store_raw = pd.read_csv( 'data/store.csv' )
 
     # merge test dataset + store
     df_test = pd.merge( df10, df_store_raw, how='left', on='Store' )
